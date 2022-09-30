@@ -24,9 +24,11 @@ use App\Http\Controllers\ApprovalStatusController;
 //     return $request->user();
 // });
 
+Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'register']);
 //API route for login user
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout']);
 
 //Protecting Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {

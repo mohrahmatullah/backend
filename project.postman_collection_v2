@@ -2260,7 +2260,7 @@
 	"variable": [
 		{
 			"key": "BaseUrl",
-			"value": "http://hrm.local",
+			"value": "http://localhost/hrm/public",
 			"type": "string"
 		}
 	]
